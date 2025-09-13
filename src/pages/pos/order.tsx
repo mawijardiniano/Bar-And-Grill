@@ -56,7 +56,7 @@ const Order = () => {
     };
 
     try {
-      const res = await axios.post("http://localhost:3000/api/order", newOrder);
+      const res = await axios.post("https://bar-and-grill.onrender.com/api/order", newOrder);
 
       console.log("✅ Order saved:", res.data);
       dispatch(clearOrder());

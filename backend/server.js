@@ -10,7 +10,16 @@ const categoryRoutes = require("./routes/categoryRouter");
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",            // local dev
+      "https://bar-and-grill-1.onrender.com/", // your frontend domain
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 app.use('/api/users', userRoutes);

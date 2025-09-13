@@ -42,7 +42,7 @@ export default function OrdersChart() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/order") // fetch all orders
+        const res = await axios.get("https://bar-and-grill.onrender.com/api/order")
         const orders = res.data
 
         // Aggregate total price per month

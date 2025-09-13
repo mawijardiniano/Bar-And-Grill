@@ -21,8 +21,8 @@ import {
 } from "../../components/ui/select";
 import type { Menu, Category } from "@/utils/types";
 
-const API_URL = "http://localhost:3000/api/menu";
-const CATEGORY_URL = "http://localhost:3000/api/category";
+const API_URL = "https://bar-and-grill.onrender.com/api/menu";
+const CATEGORY_URL = "https://bar-and-grill.onrender.com/category";
 
 const Menus = () => {
   const [menus, setMenus] = useState<Menu[]>([]);

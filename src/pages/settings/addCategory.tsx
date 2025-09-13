@@ -3,7 +3,7 @@ import axios from "axios";
 import type { Category } from "@/utils/types";
 
 const AddCategory = () => {
-  const CATEGORY_API = "http://localhost:3000/api/category";
+  const CATEGORY_API = "https://bar-and-grill.onrender.com/api/category";
 
   const [categories, setCategories] = useState<Category[]>([]);
   const [editingCategory, setEditingCategory] = useState<Category | null>(null);

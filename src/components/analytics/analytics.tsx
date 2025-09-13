@@ -16,7 +16,7 @@ interface Sales {
 const Analytics = () => {
   const [orders, setOrders] = useState<Order[]>([])
   const [sales, setSales] = useState<Sales[]>([])
-  const GET_ORDERS_API = "http://localhost:3000/api/order" // 🔹 same API
+  const GET_ORDERS_API = "https://bar-and-grill.onrender.com/api/order" // 🔹 same API
 
   useEffect(() => {
     const fetchOrders = async () => {

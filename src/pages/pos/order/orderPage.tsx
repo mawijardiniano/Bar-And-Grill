@@ -10,7 +10,7 @@ export default function OrdersPage() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/order")
+        const res = await axios.get("https://bar-and-grill.onrender.com/api/order")
         setOrders(res.data)
       } catch (err) {
         console.error("Failed to fetch orders:", err)

@@ -7,7 +7,7 @@ import Analytics from '../../components/analytics/analytics'
 const Dashboard = () => {
   const [orders, setOrders] = useState<Sales[]>([]);
 
-  const GET_ORDERS_API = "http://localhost:3000/api/order";
+  const GET_ORDERS_API = "https://bar-and-grill.onrender.com/api/order";
 
   // Fetch orders when component mounts
   useEffect(() => {

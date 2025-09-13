@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import type { Menu } from "@/utils/types";
 
-const MENU_API = "http://localhost:3000/api/menu";
+const MENU_API = "https://bar-and-grill.onrender.com/api/menu";
 
 export const fetchMenu = createAsyncThunk("menu/fetchMenu", async () => {
   const res = await axios.get<Menu[]>(MENU_API);
