@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",            // local dev
-      "https://bar-and-grill-1.onrender.com/", // your frontend domain
+      "https://bar-and-grill-1.onrender.com", // your frontend domain
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
